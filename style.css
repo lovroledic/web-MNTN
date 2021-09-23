@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -51,7 +54,7 @@ body {
     margin: 0 80px;
 }
 #logo {
-    /*font-family: Chronicle Display;*/
+    font-family: 'Bentham', serif;
     font-size: 32px;
     line-height: 38px;
     letter-spacing: 0.01em;
@@ -63,18 +66,52 @@ body {
 #menu li {
     display: inline;
     font-size: 18px;
+    margin: 0 20px;
 }
 #profile {
     display: flex;
     align-items: center;
-    font-size: 17px;
 }
 #profile-img {
     margin-right: 8px;
+}
+#profile-text {
+    font-size: 17px;
+    margin: 4px 0 0;
+}
+#menu li, #profile {
+    font-family: 'Khula', sans-serif;
 }
 
 #title-container {
     position: absolute;
     top: 14.53%;
+    left: 50%;
+    margin-left: -475px;
     z-index: 1;
+    width: 950px;
+}
+
+.title {
+    font-family: 'Bentham', serif;
+    font-size: 88px;
+    margin: 32px 0;
+}
+.subtitle-container {
+    display: flex;
+    align-items: center;
+}
+.subtitle {
+    font-family: 'Khula', sans-serif;
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 800;
+    color: #FBD784;
+    margin: 4px 0 0;
+}
+.dash {
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+    margin-right: 32px;
 }
