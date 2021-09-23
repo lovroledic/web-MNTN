@@ -8,7 +8,10 @@
 body {
     margin: 0;
     color: white;
+    background-color: #0B1D26;
 }
+
+/*
 
 #banner {
     position: relative;
@@ -114,4 +117,44 @@ body {
     height: 2px;
     background-color: #FBD784;
     margin-right: 32px;
+}*/
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 632px 566px;
+    width: 77.81%;
+    margin: 229px auto;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: 566px 632px;
+    width: 77.81%;
+    margin: 229px auto;
+}
+.num {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+.item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6.77%;
+    position: relative;
+}
+.title {
+    font-family: 'Bentham', serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+}
+p {
+    font-family: 'Khula', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
+.item-2 {
+
 }
