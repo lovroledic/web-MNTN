@@ -119,28 +119,29 @@ body {
     margin-right: 32px;
 }*/
 
+#main {
+    margin: 130px 135px;
+}
+
 .grid-1 {
     display: grid;
-    grid-template-columns: 632px 566px;
-    width: 77.81%;
-    margin: 229px auto;
+    grid-template-columns: auto auto;
+    margin: 130px 0;
 }
 .grid-2 {
     display: grid;
-    grid-template-columns: 566px 632px;
-    width: 77.81%;
-    margin: 229px auto;
+    grid-template-columns: auto auto;
+    margin: 130px 0;
 }
 .num {
     position: absolute;
-    top: -50px;
-    left: -50px;
+    top: -70px;
+    left: -100px;
 }
 .item-1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 6.77%;
     position: relative;
 }
 .title {
@@ -156,5 +157,106 @@ p {
     line-height: 32px;
 }
 .item-2 {
+    display: flex;
+    align-items: center;
+}
+.item-2 img {
+    height: 720px;
+}
+.grid-1 .item-1 {
+    margin: 100px 80px 100px 107px;
+}
+.grid-2 .item-1 {
+    margin: 100px 0 100px 107px;
+}
+#footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+#footer ul {
+    font-family: 'Khula', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+#footer li {
+    margin: 16px 0;
+}
+h4 {
+    font-family: 'Khula', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+    margin: 0;
+}
+.cr {
+    font-family: 'Khula', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
 
+@media only screen and (min-width: 1531px) { 
+    .grid-1 {
+        margin: 130px 0;
+    }
+    .grid-2 {
+        margin: 130px 0;
+    }
+    .num {
+        top: -70px;
+        left: -100px;
+    }
+    .grid-1 .item-1 {
+        margin: 100px 80px 100px 107px;
+    }
+    .grid-2 .item-1 {
+        margin: 100px 0 100px 107px;
+    }
+}
+
+@media only screen and (min-width: 1871px) { 
+    .grid-1 {
+        margin: 150px 0;
+    }
+    .grid-2 {
+        margin: 150px 0;
+    }
+    .num {
+        top: -70px;
+        left: -100px;
+    }
+    .grid-1 .item-1 {
+        margin: 130px 106px 130px 138px;
+    }
+    .grid-2 .item-1 {
+        margin: 130px 0 130px 138px;
+    }
+}
+
+
+@media only screen and (min-width: 1920px) {
+    .grid-1 {
+        margin: 200px 0;
+    }
+    .grid-2 {
+        margin: 200px 0;
+    }
+    .num {
+        top: -103px;
+        left: -150px;
+    }
+    .grid-1 .item-1 {
+        margin: 140px 114px 140px 150px;
+    }
+    .grid-2 .item-1 {
+        margin: 140px 0 140px 150px;
+    }
 }
