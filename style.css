@@ -231,12 +231,17 @@ h4 {
     grid-row: 2 / 3;
     list-style: none;
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 0;
 }
 .menu li {
     display: inline;
     margin: 0 10px;
+    padding: 0;
+}
+.equipment, .blog {
+    margin-top: 4px;
 }
 .account {
     grid-column: 2 / 3;
@@ -247,14 +252,15 @@ h4 {
 }
 
 .title {
+    max-width: 591px;
     margin: 100px 20px 0;
 }
 h1 /* Main Title */ {
     font-family: 'Bentham', serif;
-    font-size: 56px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 600;
-    line-height: 64px;
+    line-height: 56px;
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
@@ -369,25 +375,131 @@ h2 /* Grid Item Title */ {
         line-height: 28px;
     }
 }
-@media only screen and (min-width: 400px) /* up to 768px */ {
+@media only screen and (min-width: 400px) {
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
     .footer-menu li {
         font-size: 18px;
         line-height: 32px;
     }
 }
+@media only screen and (min-width: 430px) {
+    .footer-grid-item-2 {
+        justify-content: start;
+    }
+    .footer-menu-container-1 {
+        margin-right: 40px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .logo-container {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .menu {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .account {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .title {
+        margin: 100px auto 0;
+    }
+    .text {
+        max-width: 591px;
+    }
+    .grid-row {
+        margin: 0 80px;
+    }
+    .grid-item-1 {
+        margin: 0;
+    }
+    .footer-grid-item-1, .footer-grid-item-2 {
+        grid-row: 1 / 2;
+    }
+    .footer-grid-item-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 768px /* TREBA BIT VECA VRIJEDNOST */) {
+    /* TREBA ODE NESTO */
+}
 @media only screen and (min-width: 1348px) {
-    #main {
-        margin: 100px 100px;
+    .menu li {
+        margin: 0 20px;
+    }
+    .title {
+        max-width: 950px;
+        margin-top: 198px;
+    }
+    h1 {
+        font-size: 88px;
+        line-height: 100px;
+        margin: 32px 0;
+    }
+    .grid-row {
+        margin-bottom: 200px;
+    }
+    .grid-item-1 {
+        grid-row: 1 / 2;
+        display: grid;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .grid-item-2 {
+        grid-row: 1 / 2;
+        width: 566px;
+        margin: 0;
+    }
+    /* Text-image combination */
+    .row-ti {
+        grid-template-columns: auto 566px;
+    }
+    .row-ti .grid-item-1 {
+        grid-column: 1 / 2;
+    }
+    .row-ti .grid-item-2{
+        grid-column: 2 / 3;
+    }
+    /* Image-text combination */
+    .row-it {
+        grid-template-columns: 566px auto;
+    }
+    .row-it .grid-item-1 {
+        grid-column: 2 / 3;
+    }
+    .row-it .grid-item-2 {
+        grid-column: 1 / 2;
     }
     .num {
-        position: absolute;
         top: 0;
         left: 0;
+        width: auto;
+        border: 1px solid white;
     }
     .content {
-        position: relative;
-        top: 103px;
-        left: 150px;
+        height: 439px;
+    }
+    h2 {
+        font-size: 64px;
+        line-height: 77px;
+        max-width: 555px;
+        margin: 27px 0;
+    }
+    .more {
+        margin-top: 27px;
+    }
+    .img {
+        width: 100%;
+        height: auto;
     }
 }
 @media only screen and (min-width: 1531px) { 
