@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    margin: 10px 20px;
+    margin: 0;
 }
 .logo-container {
     grid-column: 1 / 2;
@@ -53,7 +53,7 @@ body {
 
 .title-container {
     display: grid;
-    margin: 100px 20px 0;
+    margin: 100px 0 0;
 }
 .title {
     grid-row: 1 / 2;
@@ -84,13 +84,14 @@ h1 /* Main Title */ {
 
 .grid {
     display: grid;
+    margin: 20px 20px 80px;
 }
 .grid-row {
     display: grid;
 }
 .grid-item-1 {
     position: relative;
-    margin: 20px;
+    margin: 0;
 }
 .num {
     position: absolute;
@@ -222,7 +223,7 @@ h2 /* Grid Item Title */ {
         max-width: 591px;
     }
     .grid {
-        margin: 0 80px;
+        margin: 0 80px 80px;
     }
     .grid-item-1 {
         margin: 0;
@@ -244,7 +245,7 @@ h2 /* Grid Item Title */ {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 100px 80px 0;
+        margin: 100px 0;
     }
     .social {
         grid-row: 1 / 2;
@@ -258,6 +259,9 @@ h2 /* Grid Item Title */ {
         display: initial;
         grid-row: 1 / 2;
         max-height: 240px;
+    }
+    .grid {
+        margin: 56px 80px 111px;
     }
     h2 {
         font-size: 64px;
@@ -277,7 +281,7 @@ h2 /* Grid Item Title */ {
         margin: 0 20px;
     }
     .title-container {
-        margin-top: 198px;
+        margin: 198px 0;
     }
     .title {
         max-width: 950px;
@@ -288,7 +292,7 @@ h2 /* Grid Item Title */ {
         margin: 32px 0;
     }
     .grid {
-        margin: 0 100px;
+        margin: 64px 100px 131px;
     }
     .grid-row {
         margin-top: 200px;
@@ -359,7 +363,6 @@ h2 /* Grid Item Title */ {
     }
     .footer {
         grid-template-columns: auto 566px;
-        margin-bottom: 131px;
     }
     .footer-grid-item-1 {
         width: 100%;
@@ -383,6 +386,9 @@ h2 /* Grid Item Title */ {
 }
 @media only screen and (min-width: 1920px) {
     .grid {
-        margin: 0 229px;
+        margin: 64px 100px 131px;
+    }
+    .grid-row, .footer {
+        margin: 200px 149px 0;
     }
 }
