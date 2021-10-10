@@ -100,7 +100,8 @@ h1 /* Main Title */ {
 }
 .subtitle {
     height: 22px;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
+    margin-left: 20px;
 }
 h2 /* Grid Item Title */ {
     font-family: 'Bentham', serif;
@@ -223,7 +224,7 @@ h2 /* Grid Item Title */ {
         max-width: 591px;
     }
     .grid {
-        margin: 0 80px 80px;
+        margin: 40px 80px 80px;
     }
     .grid-item-1 {
         margin: 0;
@@ -270,10 +271,14 @@ h2 /* Grid Item Title */ {
         margin: 27px 0;
     }
     .num {
-        top: 0;
-        right: 0;
         width: 275px;
         height: 240px;
+    }
+    .content {
+        margin: 70px 0 0 100px;
+    }
+    .subtitle {
+        margin: 0;
     }
 }
 @media only screen and (min-width: 1348px) {
