@@ -661,7 +661,7 @@ h2 {
     }
     
     .grid-item-2 {
-        width: 566px;
+        min-width: 566px;
     }
     
     .footer-grid-item-2 {
