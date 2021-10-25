@@ -1,5 +1,4 @@
 const checkpoint = window.innerWidth * 0.5;
-const container = document.querySelector(".title-container");
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
     if (currentScroll <= checkpoint) {
@@ -7,6 +6,5 @@ window.addEventListener("scroll", () => {
     } else {
         opacity = 0;
     }
-    container.style.opacity = opacity;
-    container.style.transform = 'translateY(' + currentScroll * 0.3 + 'px)';
+    document.querySelector(".title-container").style.opacity = opacity;
 })
